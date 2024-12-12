@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Note List</title>
+    <link rel="stylesheet" href="{% static 'css/note-list.css' %}">
+</head>
+<body>
+    <div class="container">
+        <h1>Note List</h1>
+        <a href="{% url 'notes:create' %}" class="create-note">Create Note</a>
+        <ul class="note-list">
+            {% for note in notes %}
+            <li><a href="{{ note.get_detail_url }}">{{ note.note_title | upper }}</a></li>
+            {% empty %}
+            <li>Not Found</li>
+            {% endfor %}
+        </ul>
+
+        <a href="{% url 'home' %}" class="back-home">Back to Home</a>
+    </div>
+</body>
+</html>

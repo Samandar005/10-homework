@@ -1,0 +1,35 @@
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #e7f2f8;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 400px;
+            margin: auto;
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #008080;
+        }
+        .nav-list {
+            list-style-type: none;
+            padding: 0;
+            text-align: center;
+        }
+        .nav-list li {
+            margin: 10px 0;
+        }
+        .nav-list a {
+            text-decoration: none;
+            color: #007bff;
+            font-weight: bold;
+        }
+        .nav-list a:hover {
+            text-decoration: underline;
+        }
